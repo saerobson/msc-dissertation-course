@@ -1,0 +1,16 @@
+title: MSc Dissertation
+description: Dissertation pieces
+template:
+  repo: msc-dissertation-template
+  name: msc-dissertation
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
